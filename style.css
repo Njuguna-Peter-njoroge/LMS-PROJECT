@@ -1,0 +1,460 @@
+* {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+}
+
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+*{
+
+
+nav{
+      display: flex;
+      justify-content: space-evenly;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow */
+      margin-top: 1.5rem;
+      background-color: white;
+}
+
+/* logo */
+.brand-logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo .edu {
+      color: rgba(0, 147, 147) /* blue */
+    }
+
+    .brand-logo .soma {
+      color: rgba(0, 147, 147); /* yellow/orange */
+    }
+
+    .brand-logo i {
+      color: rgba(0, 147, 147); /* icon color */
+      font-size: 1.2em;
+    }
+
+    /* navlinks */
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap:8rem;
+    }
+    .navbar, a {
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+font-weight: 100;
+padding: 7px 12px;
+font-size: 15px;
+color: black;
+
+}
+
+.navbar , button {
+      padding: 8px 23px;
+      border-radius: 12px;
+      font-size: 17px;
+      cursor: pointer;
+      
+}
+.nav-button-signup {
+      background-color: rgba(0, 147, 147);
+      color: white;
+}
+
+}
+
+
+.main-body {
+      display: flex;
+      margin: 2rem;
+      justify-content: center;
+      gap: 20px;
+}
+
+.details-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+
+}
+
+
+.welcome {
+      font-size: 3.5rem;
+      margin: 2rem;
+      
+}
+
+.details {
+      font-size: 1.6rem;
+      font-weight: 500;
+            color: gray;
+
+}
+.details-left p:nth-of-type(2) {
+      color: gray;
+}
+
+.body-button{
+      border-radius: 6rem;
+      padding: 12px 25px ;
+      background-color: rgba(0, 147, 147);
+      color: white;
+      font-weight: 200;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      margin: 2rem;
+
+}
+.image-right {
+      flex: 1;
+}
+
+.image-right , img {
+      max-width:75%;
+      height: auto;
+}
+
+
+.lower-card {
+      display: flex;
+      justify-content: space-evenly;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1500px;
+    border-radius: 0.6rem;
+
+}
+
+.cards{
+display: flex;
+gap: 1.5rem;
+width: 500px;
+padding: 50px;
+height:auto;
+text-align: center;
+}
+
+.img {
+      display: flex;
+width: 70px;
+height: 70px;
+    background-color: rgba(0,147,147);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+        margin: 0 auto 15px; 
+}
+.img i {
+      font-size: 28px;
+      color: white;
+}
+.text  h4{
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom:12px ;
+      
+}
+
+.text p{
+      font-size: 20px;
+      margin-bottom:12px ;
+      
+}
+
+
+.about-us {
+      margin: 6rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+}
+
+.about-header {
+ width: 100%;
+ font-size: 2rem;
+color: rgba(0,147,147); 
+margin: 1.5rem;
+}
+.about-left {
+      flex: 1;
+      margin-top: 1rem;
+}
+
+.about-right , img{
+      flex: 1;
+      max-width:75%;
+}
+
+
+.about-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      margin-top: -2.5rem;
+
+}
+.about-text h3 {
+      font-size: 2.4rem;
+      margin: 0.8rem;
+      font-weight: 200;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.about-text p {
+font-size: 1.8rem;
+color: grey;
+margin: 1rem;
+}
+
+.text-lines {
+      margin: 1rem;
+}
+.feature-list {
+      display: grid;
+      list-style: none;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px 30px;
+      padding: 0;
+}
+
+
+.feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1.2rem;
+      margin: 1.2rex;
+}
+
+.feature-list i {
+      display: flex;
+      color: rgba(0,147,147);
+      font-size: 1.3rem;
+      background-color: rgba(0,147,147);
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+}
+
+
+.replies-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+     
+}
+
+.replies-header h3 {
+      font-size: 2.2rem;
+       color: rgba(0,147,147);
+       font-weight:  800;
+}
+
+.replies-header p {
+      font-size: 1.5rem;
+      font-style:oblique ;
+}
+
+.card-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      justify-content: center;
+      margin: 4.6rem;
+      gap: 3rem;
+}
+.card-replies {
+      border: 1px solid green;
+      border-radius: 2rem;
+      padding: 1.8rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+      font-style:italic;
+      height: auto;
+}
+
+
+.contact-us {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+}
+
+.contact-us-header{
+      padding: 4rem;
+      font-size: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color:rgba(0,147,147);
+      gap: 2rem;
+}
+.contact-us-header p{
+      color: rgb(8, 5, 5);
+      font-weight: 400;
+
+}
+.contact-us-header h4{
+      border-bottom: 3.5px solid rgba(0,147,147);
+       padding-bottom: 2rem;
+
+}
+
+
+.contact-us-sides {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      height: auto;
+}
+
+.concact-us-left{
+      display: flex;
+      flex: 1;
+      background-color: rgba(0,147,147);
+      flex-direction: column;
+      border-radius: 1rem;
+      width: 500px;
+      padding: 3rem;
+
+}
+
+.con-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      font-size: 1.8rem;
+      gap: 2rem;
+      
+}
+
+.con-header p{
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: rgb(196, 190, 190);
+
+}
+.card-info {
+      display: flex;
+      gap: 2rem;
+      margin: 1.5rem;
+      color: white;
+
+
+}
+
+.card-info h4, p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+}
+
+      .card-info i {
+            font-size: 2rem;
+            background-color:rgb(93, 224, 224) ;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+   .concact-us-left   .content {
+      font-size: 1rem;
+   }
+
+
+   
+
+.right-card{
+      background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+      width: 700px;
+      border-radius: 1rem;
+      height: auto;
+}
+
+
+.right-card-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+       margin: 2rem;
+
+}
+
+.right-card-header h4 {
+      font-weight: 300;
+      font-size:2.4rem;
+      color: rgba(0,147,147);
+      margin-bottom: 1.3rem;
+}
+
+.right-card-header p {
+      font-size: 22px;
+      font-weight: 400;
+      color: grey;
+      font-style: oblique;
+}
+
+input {
+      width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+  input[type="text"]:focus,
+input[type="email"]:focus {
+    background-color: rgb(236, 234, 234);
+    border-color: #dddddd;
+    color: #333;
+}
+input ::placeholder {
+      font-size: 2rem;
+      font-weight: bold;
+}
+
+ textarea{
+      margin:2rem;
+      padding: 12px;
+      width: 60%;
+      height: 12rem;
+
+}
+.form-button {
+      background-color: rgba(0,147,147);
+      color: white;
+      font-size: 1 rem;
+      margin: 0 auto;
+      border-radius: 1rem;
+
+}
