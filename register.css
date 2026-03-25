@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+.container p {
+      margin: 0.5rem 0;
+}
+/* IMAGE */
+.image-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease;
+}
+
+/* FORM WRAPPER */
+.form-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORMS */
+.form {
+    position: absolute;
+    width: 80%;
+    transition: 0.4s ease;
+
+}
+
+/* HIDE SIGNUP INITIALLY */
+.sign-up {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ACTIVE STATE */
+.container.active .image-panel {
+    transform: translateX(100%);
+}
+
+.container.active .form-container {
+    left: 0;
+    right: auto;
+}
+
+/* SWITCH FORMS */
+.container.active .login {
+    opacity: 0;
+    pointer-events: none;
+        z-index: 1;
+
+}
+
+.container.active .sign-up {
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top:20px;
+    background: rgba(0,147,147);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

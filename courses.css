@@ -1,0 +1,124 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.search {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+
+}
+
+
+.search label {
+      font-size: 1.2rem;
+            margin: 0.5rem;
+
+}
+.search input[type='text'] {
+       width: 100%;
+    max-width: 600px; /* safe max width */
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+
+}
+
+.course-content {
+      font-weight: 400;
+      font-size:2.5rem;
+      color: rgba(0,147,147);
+      
+}
+
+.courses {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      cursor: pointer;
+}
+
+
+.course-cards {
+      display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+      width: 400px;
+      height:auto;
+      background-color: white;
+      border-radius: 0.5rem;
+      margin: 0.8rem;      
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+        border: 2px solid rgba(0,147,147);
+
+
+}
+
+
+.course-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.course-cards img {
+      max-width: 100%;
+      border-radius:2rem;
+      padding: 0.6rem;
+}
+
+
+.course-header {
+      margin: 0.2rem;
+      padding: 1rem;
+      border-radius: 0.4rem;
+}
+
+.courses h4 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 500;
+   font-size: 1.6rem;
+   font-style: oblique;
+   color: #666464;
+
+}
+
+.courses .course-details  {
+            font-size: 1.5rem;
+            gap: 40px;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.course-details i {
+      color: rgba(0,147,147);
+}
+
+.body-button {
+
+ border-radius: 3rem;
+      padding: 12px 5px ;
+      background-color: rgba(0, 147, 147);
+      color: white;
+      font-weight: 200;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      margin: 2rem;
+}
