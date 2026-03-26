@@ -74,7 +74,6 @@ body {
 .course-cards img {
       max-width: 100%;
       border-radius:2rem;
-      padding: 0.6rem;
 }
 
 
@@ -120,5 +119,11 @@ body {
       font-size: 1.2rem;
       border: none;
       cursor: pointer;
-      margin: 2rem;
+      margin: 1rem;
+
+}
+
+.course-description {
+    font-size: 1rem;
+    color: #333;
 }
