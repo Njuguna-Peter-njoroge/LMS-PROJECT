@@ -43,9 +43,13 @@ body {
 }
 
 .courses {
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    
+
 }
 
 
@@ -54,7 +58,7 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
-      width: 400px;
+      width: 100%;
       height:auto;
       background-color: white;
       border-radius: 0.5rem;
@@ -67,7 +71,7 @@ body {
 
 
 .course-cards:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
 }

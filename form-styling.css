@@ -32,6 +32,18 @@ margin-top: 4rem;
     transform: translateY(-5px);
 }
 
+select {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #fff;
+    appearance: none; /* removes default arrow on some browsers */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><polygon points="0,0 14,0 7,7" style="fill:%23009393"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 40px;
+}
+
 input[type="text"],
 input[type="date"],
 select {
@@ -116,11 +128,17 @@ input[type="checkbox"] {
     height: 18px;
 }
  .form-group select {
-      width: 20rem;
-      display: flex;
-      align-items: center;
-      height: 2rem;
-
+      width: 100%;      /* or 20rem if you prefer */
+      height: 2.5rem;   /* adjust height if needed */
+      padding: 0 12px;  /* left/right padding */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      appearance: none;  /* for custom arrow */
+      background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><polygon points="0,0 14,0 7,7" style="fill:%23009393"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      font-size: 1rem;   /* ensure text is visible */
 }
 
 .form-group option {
