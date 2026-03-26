@@ -1,4 +1,3 @@
-// Select all course images
 const courseImages = document.querySelectorAll('.course-img');
 
 courseImages.forEach(img => {
@@ -7,17 +6,16 @@ courseImages.forEach(img => {
         const title = parent.dataset.title;
         const description = parent.dataset.description;
 
-        // Check if description already exists, toggle it
         let descDiv = parent.querySelector('.course-description');
         if(descDiv) {
-            descDiv.remove(); // hide if already visible
+            descDiv.remove(); 
             return;
         }
 
-        // Create description div
+
         descDiv = document.createElement('div');
         descDiv.classList.add('course-description');
-        descDiv.style.marginTop = '10px';
+        descDiv.style.margin = '10px';
         descDiv.style.padding = '10px';
         descDiv.style.border = '1px solid #009393';
         descDiv.style.borderRadius = '5px';

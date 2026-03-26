@@ -4,13 +4,18 @@
       box-sizing: border-box;
 }
 
- 
+ body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
  .container{
 display: flex;
 justify-content: center;
 align-items: center;
-height: auto;
-background-color: #f5f5f5;
+    min-height: 100vh;
+        padding: 2rem;
+    background: linear-gradient(120deg, #e0f7f7, #f5f5f5);
 margin-top: 4rem;
 
  }
@@ -22,6 +27,28 @@ margin-top: 4rem;
   width: 600px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
  }
+
+ .registration:hover {
+    transform: translateY(-5px);
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #009393;
+    box-shadow: 0 0 5px rgba(0,147,147,0.3);
+    outline: none;
+}
 
  .container h2 {
       font-size: 2rem;
@@ -39,13 +66,15 @@ margin-top: 4rem;
       font-style: oblique;
  }
 
- .container h3 {
-      padding: 1rem;
-      font-weight: 300;
-      font-size: 2rem;
-      font-style: oblique;
-      border-bottom: 2px solid rgba(0,147,147);
- }
+h2 {
+    background: linear-gradient(90deg, #009393, #00c9c9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    color: #009393;
+}
 
  .container h6 {
       font-size: 1.2rem;
@@ -55,9 +84,16 @@ margin-top: 4rem;
  }
 
  .form-group {
-margin: 1.4rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f0f9f9;
+    box-shadow: 0 3px 10px rgba(0,147,147,0.1);
 }
 
+.form-group:hover {
+    box-shadow: 0 5px 15px rgba(0,147,147,0.2);
+}
 
 label {
   display: inline-block;
@@ -73,8 +109,11 @@ input[type="text"] ,input[type="date"]{
   border-radius: 0.5rem;
 }
 
-input[type="radio"]  {
-      background-color: red;
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #009393; /* modern browsers */
+    width: 18px;
+    height: 18px;
 }
  .form-group select {
       width: 20rem;
@@ -92,13 +131,7 @@ input[type="radio"]  {
 }
 
 
- input[type="checkbox"] {
- margin: 1.4rem;
  
-    
-        
-
-}
 
 
 .submit-button {
@@ -110,12 +143,30 @@ input[type="radio"]  {
 }
 
 .form-button {
-       width: 8rem;
-      padding: 17px;
-      border-radius: 1.2rem;
-      color: white;
-      font-size: 1rem;
-      font-weight: 300;
-      background-color: rgba(0,147,147);
-      margin: 4rem;
+    width: 10rem;
+    padding: 15px;
+    border-radius: 1.2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #009393;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-button:hover {
+    background-color: #007575;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .registration {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .form-group select {
+        width: 100%;
+    }
 }
