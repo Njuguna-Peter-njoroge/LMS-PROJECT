@@ -25,8 +25,8 @@
                   <a href="" routerLink="/">Home</a>
                   <a href="" routerLink="/about">About</a>
                   <a href="" routerLink="/">Contact</a>
- <button class="nav-button-login" onclick="window.location.href='register.html'">Login</button>
-<button class="nav-button-signup" onclick="window.location.href='register.html'">Signup</button>
+ <button class="nav-button-login" onclick="window.location.href='register.php'">Login</button>
+<button class="nav-button-signup" onclick="window.location.href='register.php'">Signup</button>
             </div>
       </nav>
 
@@ -36,8 +36,8 @@
                   <p class="details">Complete assessment preparing you to the future life after <br>
                         <br> support,and competence in  ofering the best education ever entoll now.</p>
                         <div class="buttons-body">
-             <button class="body-button" onclick="window.location.href='register.html'">Get Started</button>
-           <button class="body-button" onclick="window.location.href='courses.html'">Browse courses</button>
+             <button class="body-button" onclick="window.location.href='register.php'">Get Started</button>
+           <button class="body-button" onclick="window.location.href='courses.php'">Browse courses</button>
                         </div>
              
             </div>

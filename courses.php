@@ -34,7 +34,7 @@
       <img src="./images/imae1.jpg" alt="" class="course-img">
 </div>
             
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
  
            
@@ -51,7 +51,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -69,7 +69,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -87,7 +87,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -105,7 +105,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -123,7 +123,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -141,7 +141,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -158,7 +158,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -176,7 +176,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -195,7 +195,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -213,7 +213,7 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
@@ -231,25 +231,11 @@
 </div>
             
 
-            <button class="body-button" onclick="window.location.href='form.html'">Apply now</button>
+            <button class="body-button" onclick="window.location.href='form.php'">Apply now</button>
 
            
             </div>
 
-
-            
-
-
-
-
-            
-
-            
-        
-
-  
-          
-         
               
       </div>
       <script src="./cards.js"></script>
