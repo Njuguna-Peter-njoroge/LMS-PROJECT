@@ -6,12 +6,9 @@
 
 
 body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-
 
 
 
@@ -129,7 +126,7 @@ color: black;
       flex: 1;
 }
 
-.image-right   img , .about-right img{
+.image-right   img , .about-right  img{
       max-width:75%;
       height: auto;
 }
@@ -425,7 +422,8 @@ margin: 1rem;
 
 }
 
-.card-info h4, p {
+.card-info h4,
+.card-info p {
       font-size: 1.2rem;
       margin-bottom: 1rem;
 }
@@ -512,5 +510,66 @@ input ::placeholder {
 
 }
 
-/* form registration */
 
+.footer {
+      margin-top: 4rem;
+      border-radius: 1.3rem;
+  display: flex;
+    background: rgba(0, 147, 147);
+
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color: #cbd5e1;
+}
+
+/* Right side */
+.footer-right {
+  display: flex;
+  gap: 50px;
+}
+
+/* Each column */
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list h4 {
+  margin-bottom: 10px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-list a:hover {
+  color: #38bdf8;
+}
+
+/* Bottom footer */
+.bottom-footer {
+      width: 100%;
+  text-align: center;
+  background-color: #0f172a;
+  color: white;
+  padding: 15px;
+}
+
+.bottom-footer a {
+      color: rgba(2, 255, 255, 0.884);
+}

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>learning management system</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-      <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/lms_backup/homepage.css">
 </head>
 
 <body>
@@ -240,35 +240,42 @@
 
       </div>
 
-      <div class="footer">
-            <div class="footer-left">
-          <!-- <i class="fa-solid fa-graduation-cap"></i> -->
+     
 
-            </div>
-            <div class="footer-right">
-                  <div class="footer-list">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                  </div>
-<div class="footer-list">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                  </div>
-          <div class="footer-list">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                  </div>         
-               </div>
-      </div>
+<div class="footer">
+  <div class="footer-left">
+    <h2>EduSoma</h2>
+    <p>Empowering education for the future</p>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-list">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Courses</a>
+    </div>
+
+    <div class="footer-list">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQs</a>
+    </div>
+
+    <div class="footer-list">
+      <h4>Follow Us</h4>
+      <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+      <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+</div>
+
+<footer class="bottom-footer">
+  <p>© 2026 EduSoma | Made  with love by <a href="https://github.com/Njuguna-Peter-njoroge">Peterdepaul</a></p>
+</footer>
+      
 </body>
 
 </html>
