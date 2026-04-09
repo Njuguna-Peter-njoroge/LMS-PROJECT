@@ -12,14 +12,14 @@
 
 <body>
       <div class="container">
-            <form action="post" class="registration">
+            <form action="php/apply.php" method="POST" class="registration">
                   <h2>Register with us today!!!<i class="fa-solid fa-highlighter"></i></h2>
                   <p>Enroll now and get to enjoy your studies here at edusoma</p>
 
                   <h3>Personal Details</h3>
                   <div class="form-group">
                         <label for="name">Your Name:</label>
-                        <input type="text" name="" id="name"> <br>
+                        <input type="text" name="full_name" id="name" required> <br>
                   </div>
 
                  
@@ -28,13 +28,13 @@
 
                   <div class="form-group radio-buttons">
                         <h6>Select Gender</h6>
-                        <input type="radio" name="" id="male" name="gender" value="male">
+                        <input type="radio" name="gender" id="male"  value="male">
                         <label for="male">Male</label> <br>
 
-                        <input type="radio" name="" id="female" name="gender" value="female">
+                        <input type="radio" name="gender" id="female"  value="female">
                         <label for="female">female</label> <br>
 
-                        <input type="radio" name="" id="oither" name="gender" value="other">
+                        <input type="radio" name="gender" id="other" value="other">
                         <label for="other">prefer not to say</label> <br>
                   </div>
 
@@ -42,16 +42,16 @@
 
 
                   <div class="form-group">
-                        <h6>Date Of birth:</h6>
-                        <input type="date" name="" id="">
+                        <label for="dob">Date Of birth:</label>
+                        <input type="date" name="date_of_birth" id="dob" required>
                   </div>
-~
+
 
 
 
                   <div class="form-group">
-                        <h6>National Id Number:</h6>
-                        <input type="text" name="" id="">
+                        <label for="id_number">National Id Number:</label>
+                        <input type="text" name="id_number" id="id_number">
                   </div>
 
 
@@ -62,7 +62,7 @@
 
                         <label for="Marital">
 
-                              <select name="Marital-status" id="Marital">
+                              <select name="marital_status" id="Marital">
                                     <option value="">--select status--</option>
                                     <option value="single">Single</option>
                                     <option value="married">Married</option>
@@ -80,19 +80,19 @@
  <h3>Contact Information</h3>
   <div class="form-group">
       <label for="email">Email:</label>
-      <input type="text" name="" id="email">
+      <input type="email" name="email" id="email" required>
   </div>
 
 
   <div class="form-group">
       <label for="phone-number">phone-number:</label>
-      <input type="text" name="" id="phone-number">
+      <input type="text" name="phone_number" id="phone">
   </div>
 
 
   <div class="form-group">
       <label for="phone-number">Alternative phone number(optional):</label>
-      <input type="text" name="" id="phone-number">
+      <input type="text" name="alternative_number" id="alt_phone">
   </div>
 </div>
 
@@ -111,21 +111,21 @@
 
       <div class="form-group">
             <label for="county">State:</label>
-            <input type="text" name="state" id="">
+            <input type="text" name="state" id="state">
       </div>
 
       <div class="form-group">
             <label for="country">Country</label>
 
-            <select name="" id="">
-                  <option value="">--select country--</option>
-                  <option value="">Kenya</option>
-                  <option value="">Tanzania</option>
-                  <option value="">Uganda</option>
-                  <option value="">Sudan</option>
-                  <option value="">Ethiopia</option>
-                  <option value="">Eritrea</option>
-                  <option value="">others</option>
+            <select name="country" id="country">
+                  <option value="select">--select country--</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Eritrea">Eritrea</option>
+                  <option value="others">others</option>
             </select>
       </div>
 </div>
@@ -134,10 +134,10 @@
       <h3>Location Details</h3>
       <div class="form-group">
               <label for="region">Region:</label>
-      <input type="text">
+      <input type="text" name="region">
 
       <label for="">Nearest landmark:</label>
-      <input type="text">
+      <input type="text" name="landmark">
       </div>
     
 
@@ -148,31 +148,31 @@
       <h3> academic-background</h3>
       <div class="form-group">
             <label for="academic">Highest Level of Education:</label>
-            <select name="education" id="">
+            <select name="education" id="education">
                   <option value="">--select--</option>
-                  <option value="">High School</option>
-                  <option value="">degree</option>
-                  <option value="">diploma</option>
-                  <option value="">Certificate</option>
-                  <option value="">others</option>
+                  <option value="High School">High School</option>
+                  <option value="degree">degree</option>
+                  <option value="diploma">diploma</option>
+                  <option value="Certificate">Certificate</option>
+                  <option value="others">others</option>
             </select>
  
           
 
 
-            <label for="`">Year of Completion:</label>
-            <select name="year" id="">
-                  <option value="">select year</option>
-                  <option value="">2025</option>
-                  <option value="">2024</option>
-                  <option value="">2023</option>
-                  <option value="">2022</option>
-                  <option value="">2021</option>
-                  <option value="">2020</option>
+            <label for="year">Year of Completion:</label>
+            <select name="year" id="year">
+                  <option value="select">select year</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
             </select>
 
               <label for="">Institution Name:</label>
-            <input type="text" name="Institution Name" id="">
+            <input type="text" name="institution_name" id="institution">
 
 
       </div>
@@ -185,42 +185,42 @@
       <div class="form-group">
 
             <label for="">Course Category:</label>
-            <input type="text" placeholder="e.g., IT, Business, Engineering">
+            <input type="text" name="course_category" placeholder="e.g., IT, Business, Engineering">
 
 
             <label for="course">Course Selection:</label>
 
-            <select name="course" id="">
+            <select name="course" id="course">
                   <option value="">--select--</option>
-                  <option value="">degree in engineering</option>
-                  <option value="">degree in computer science</option>
-                  <option value="">degree in nursing</option>
-                  <option value="">degree in economics and statistics</option>
+                  <option value="engineering">degree in engineering</option>
+                  <option value="computer science">degree in computer science</option>
+                  <option value="nursing">degree in nursing</option>
+                  <option value="economics">degree in economics and statistics</option>
             </select>
 
                <label for="mode">Mode of Study:</label>
 
-      <select name="" id="">
-            <option value="">Online</option>
-            <option value="">Pysical</option>
-            <option value="">Hybrid</option>
+      <select name="study_mode" id="study_mode">
+            <option value="Online">Online</option>
+            <option value="Physical">Physical</option>
+            <option value="Hybrid">Hybrid</option>
       </select>
 
 
          <label for="">Preferred Start Date:</label>
-         <input type="date">
+         <input type="date" name="start_date">
       </div>
 
    
 </div>
     
 <div class="policy">
-           <input type="checkbox" name="" id="">
+           <input type="checkbox" name="terms" id="policy" value="accepted">
 
                   <label for="">Accept Terms & Conditions:</label> <br>
 
 
-                  <input type="checkbox" name="" id="">
+                  <input type="checkbox" name="privacy" id="privacy" value="accepted">
 
                   <label for="">Privacy Policy Agreement</label> <br>
 </div>
@@ -228,7 +228,7 @@
 
                   <div class="submit-button">
 
-             <button class="form-button">submit</button>
+             <button class="form-button" type="submit">submit</button>
 
                   </div>
 
